@@ -1,0 +1,27 @@
+#expensesList {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+li {
+  display: flex;
+  width: 200px;
+  margin: 0;
+}
+
+span {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#amount{
+  width: 30%;
+}
+
+#description {
+  width: 70%;
+}
+
+

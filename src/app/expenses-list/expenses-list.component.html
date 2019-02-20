@@ -1,3 +1,8 @@
 <p>
   {{ pageTitle }}
 </p>
+<ul id="expensesList">
+  <li *ngFor='let expense of expenses'><span id="amount">{{ expense.amount}}</span><span id="description">{{ expense.description}}</span>
+  </li>
+</ul>
+<p>{{ expensesTotal }}</p>
