@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { User } from '../../models/User';
 @Component({
   selector: 'app-savings-goals',
   templateUrl: './savings-goals.component.html',
@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SavingsGoalsComponent implements OnInit {
 
-  constructor() { }
+  user: User;
 
-  ngOnInit() {
+  constructor(){
+    //setting up a sample user
+    this.user = {
+      firstName: 'Zack',
+      lastname: 'Meinke',
+      age: 26,
+      address: {
+        street: '1030 Lancaster Dr',
+        city: 'Medina',
+        state: 'Ohio'
+      }
+    }
   }
-
+  ngOnInit() { }
 }
