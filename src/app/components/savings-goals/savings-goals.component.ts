@@ -16,8 +16,8 @@ export class SavingsGoalsComponent implements OnInit {
       lastname: 'Meinke',
       age: 26,
       address: {
-        street: '1030 Lancaster Dr',
-        city: 'Medina',
+        street: '1030 Wallys Dr',
+        city: 'Cleveland',
         state: 'Ohio'
       }
     }
